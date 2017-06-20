@@ -128,9 +128,10 @@ ENV/
 # mkdocs documentation
 /site
 
-# leftover json files and logs
+# leftover json files and logs, api key info
 *.json
 *.csv
 *.txt
+WoopraKeys.py
 
 # End of https://www.gitignore.io/api/macos,python

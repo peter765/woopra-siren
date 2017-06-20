@@ -19,15 +19,13 @@ NOTES:
 '''
 import json
 import requests
+import WoopraKeys
 from sortedcontainers import SortedDict
 
 #json parameters for HTTP POST request
-payload = {'website' : 'mycricket.at.cricketwireless.com'}
-api_url = "http://www.woopra.com/rest/2.4/online/list"
-#login info for woopra
-app_ID = "FQ4MZO2VBCOIGIDTX44AXTPYHRFBYAY2"
-secret = "y0QENfwHXXYea7ZvvEbgImeLncWXxzG4DvPDvpMrCkzwu3JjnzHCuVNwvHAjtXaq"
-api_auth = (app_ID, secret)
+payload = WoopraKeys.payload
+api_url = WoopraKeys.api_url
+api_auth = WoopraKeys.api_auth
 
 
 
