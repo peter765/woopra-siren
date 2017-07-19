@@ -115,15 +115,15 @@ class APIProcess(object):
         self.actions = SortedDict()
         self.actions["None"] = len(self.actions)
         self.visitors = []
-        filename = "app_response.json"
+        filename = "logs/app_response.json"
         if site == 'web':
             payload = {'website' : 'newcricketwireless.com'}
-            filename = "web_response.json"
+            filename = "logs/web_response.json"
         elif site == 'amss':
             payload = {'website' : 'amss.at.cricketwireless.com'}
-            filename = "amss_response.json"
-        self.outfile = open("output.json", 'w')
-        self.actfile = open("actions.json", 'w')
+            filename = "logs/amss_response.json"
+        self.outfile = open("logs/output.json", 'w')
+        self.actfile = open("logs/actions.json", 'w')
         self.resp_file = open(filename, "w")
         self.connect()
         self.actionSort()

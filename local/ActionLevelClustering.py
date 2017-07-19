@@ -46,11 +46,10 @@ from mpl_toolkits.mplot3d import Axes3D
 import random as rand
 
 woopra_data = APIProcess()
-woopra_data.writeToFile()
 
 
 #preprocess the api data to be used in ML clustering
-x, features = FeatureExtract.nextActionFeatures2D(woopra_data,8)
+x, features = FeatureExtract.nextActionFeatures2D(woopra_data,16)
 f_indices = list(features.values())
 f_names = list(features.keys())
 
